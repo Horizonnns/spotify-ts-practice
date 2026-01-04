@@ -26,7 +26,7 @@ export interface IBase {
 	updatedAt: string
 }
 
-interface IArtist extends IBase {
+export interface IArtist extends IBase {
 	name: string
 	image: TImageUrl
 	isVerivied: boolean
