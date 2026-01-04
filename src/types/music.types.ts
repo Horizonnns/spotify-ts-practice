@@ -37,6 +37,7 @@ export interface ITrack extends IBase {
 	title: string
 	duration: number
 	isPublished: string
+	audioUrl: string
 }
 
 //  Interface -> используется для описание объекта, сущности (юзера, книги и т.д.), ответы от API

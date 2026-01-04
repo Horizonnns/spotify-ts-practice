@@ -2,7 +2,7 @@ import type { ITrack } from './music.types'
 
 export interface IPlayerState {
 	currentTrack: ITrack | null
-	queuq: ITrack[]
+	queue: ITrack[]
 	history: ITrack[]
 	isPlaying: boolean
 	volume: number
