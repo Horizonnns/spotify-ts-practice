@@ -1,5 +1,5 @@
-type TID = string
-type TImageUrl = string
+export type Tid = string
+export type TImageUrl = string
 
 // type TDuration = number
 // type TIsPublished = boolean
@@ -9,7 +9,7 @@ type TImageUrl = string
 export type TStatus = 'idle' | 'loading' | 'successed' | 'failed'
 
 type TBase = {
-	id: TID
+	id: Tid
 	createdAt: string
 	updatedAt: string
 }
@@ -20,8 +20,8 @@ export type TArtist = {
 	isVerivied: boolean
 } & TBase
 
-interface IBase {
-	id: TID
+export interface IBase {
+	id: Tid
 	createdAt: string
 	updatedAt: string
 }
