@@ -1,4 +1,4 @@
-import type { ChangeEvent, FormEvent } from 'react'
+import type { ChangeEvent, FormEvent, KeyboardEvent } from 'react'
 
 export function SearchBar() {
 	const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
