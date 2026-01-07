@@ -1,4 +1,4 @@
-import type { ITrack } from './music.types'
+import { type IBase, type ITrack } from './music.types'
 
 type TExtrackArraytype<T> = T extends (infer U)[] ? U : never
 
@@ -14,3 +14,9 @@ type Nullable<T> = {
 
 type TTrackDraft = Optional<ITrack>
 type TTrackUpdate = Nullable<ITrack>
+
+type Getters<T> = {
+	[K in keyof T as `get${Capitalize<string & K>}`]: () => T[K]
+}
+
+type TTrackGetters = Getters<Omit<ITrack, keyof IBase>>
